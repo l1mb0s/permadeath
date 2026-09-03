@@ -1,0 +1,1 @@
+execute if predicate permadeath:test

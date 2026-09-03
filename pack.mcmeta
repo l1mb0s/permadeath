@@ -1,6 +1,8 @@
 {
 	"pack": {
-		"pack_format": 118,
-		"description": "Permadeath datapack"
+		"pack_format": 119,
+		"description": "Permadeath datapack",
+        "max_format": 119,
+        "min_format": 119
 	}
 }
