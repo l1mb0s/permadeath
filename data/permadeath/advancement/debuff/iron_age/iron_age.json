@@ -1,0 +1,59 @@
+{
+    "sends_telemetry_event": false,
+    "rewards": {
+        "function": "permadeath:debuff/obtained/iron_age"
+    },
+    "criteria": {
+        "get_iron_items": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:iron_axe",
+                            "minecraft:iron_boots",
+                            "minecraft:iron_chestplate",
+                            "minecraft:iron_helmet",
+                            "minecraft:iron_hoe",
+                            "minecraft:iron_ingot",
+                            "minecraft:iron_leggings",
+                            "minecraft:iron_nugget",
+                            "minecraft:iron_pickaxe",
+                            "minecraft:iron_shovel",
+                            "minecraft:iron_sword",
+                            "minecraft:bucket",
+                            "minecraft:shield",
+                            "minecraft:shears",
+                            "minecraft:flint_and_steel",
+                            "minecraft:iron_block"
+                        ]
+                    }
+                ]
+            }
+        },
+        "get_iron_advancement": {
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:type_specific/player": {
+                            "advancements": {
+                                "minecraft:story/smelt_iron": true,
+                                "minecraft:story/iron_tools": true,
+                                "minecraft:story/obtain_armor": true
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "get_iron_items",
+            "get_iron_advancement"
+        ]
+    ]
+}

@@ -1,0 +1,3 @@
+advancement revoke @s only permadeath:debuff/iron_age/check/mining_speed
+execute if entity @s[tag=debuff.iron_age.mining_speed] run return run execute unless predicate permadeath:debuff/check/iron_age/iron_tools run function permadeath:debuff/iron_age/mining_speed/cancel_effect
+execute if entity @s[tag=!debuff.iron_age.mining_speed] if predicate permadeath:debuff/check/iron_age/iron_tools run function permadeath:debuff/iron_age/mining_speed/do_effect

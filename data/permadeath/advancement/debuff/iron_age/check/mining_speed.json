@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "permadeath:debuff/iron_age/mining_speed/handler"
+    }
+}
